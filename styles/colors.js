@@ -1,6 +1,7 @@
 export default {
     primary: '#f9fafb',
     gray: '#111827',
+    gray100:'#f1f5f9',
     gray500:'#64748b',
     gray700:'#334155',
     gray800:'#1e293b',

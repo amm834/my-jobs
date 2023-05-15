@@ -5,20 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e8496c9e-21c9-4df8-8254-64838afc5d50" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apis/search.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/PopularJobs.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/cards/PopularCard.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/http.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/job.service.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/fonts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/_layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/_layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/babel.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/babel.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apis/search.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/PopularJobs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/PopularJobs.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Welcome.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Welcome.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/cards/PopularCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/cards/PopularCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/http.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/http.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/job.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/job.service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/colors.js" beforeDir="false" afterPath="$PROJECT_DIR$/styles/colors.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,22 +39,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -70,7 +64,8 @@
       <option name="presentableId" value="Default" />
       <updated>1684085826087</updated>
       <workItem from="1684085827180" duration="5474000" />
-      <workItem from="1684144640638" duration="7271000" />
+      <workItem from="1684144640638" duration="8286000" />
+      <workItem from="1684160184660" duration="2958000" />
     </task>
     <servers />
   </component>

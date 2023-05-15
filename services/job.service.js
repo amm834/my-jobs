@@ -1,6 +1,6 @@
 import http from "../lib/http";
 
-export const searchJob = async ({}) => {
+export const searchJob = async () => {
     try {
         const res = await http.get('/search', {
             params: {
