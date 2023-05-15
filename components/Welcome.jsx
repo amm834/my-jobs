@@ -3,12 +3,22 @@ import {FlatList, Text, TextInput, TouchableOpacity, View} from 'react-native';
 import {MagnifyingGlassIcon} from 'react-native-heroicons/solid'
 import {useRouter} from "expo-router";
 import colors from "../styles/colors";
+import {useQuery} from "@tanstack/react-query";
+import {searchJob} from "../services/job.service";
 
 const jobTypes = ['Full Time', 'Part Time', 'Contractor']
 
 const Welcome = () => {
     const router = useRouter()
     const [selectedJobType, setSelectedJobType] = useState("Full Time")
+
+    const {data, isError, isLoading} = useQuery({
+        queryKey: ['search'],
+        queryFn: searchJob,
+    })
+
+    console.log(isLoading)
+
     return (
         <View>
             <View>

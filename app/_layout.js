@@ -1,9 +1,16 @@
 import React from 'react';
 import {Stack} from "expo-router";
+import {QueryClientProvider, QueryClient} from "@tanstack/react-query";
+
+const queryClient = new QueryClient({
+    defaultOptions: { queries: { retry: 2 } },
+});
 
 const _Layout = () => {
     return (
-       <Stack/>
+        <QueryClientProvider client={queryClient}>
+            <Stack/>
+        </QueryClientProvider>
     );
 };
 

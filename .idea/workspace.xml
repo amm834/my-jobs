@@ -5,9 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e8496c9e-21c9-4df8-8254-64838afc5d50" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apis/search.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/PopularJobs.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/cards/PopularCard.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/http.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/job.service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styles/fonts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/_layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/_layout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/babel.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/babel.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Welcome.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Welcome.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/colors.js" beforeDir="false" afterPath="$PROJECT_DIR$/styles/colors.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +38,9 @@
     <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
   <component name="ProjectId" id="2PnHG2j0CASJPMAYLREfkmIHdJk" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -56,7 +70,7 @@
       <option name="presentableId" value="Default" />
       <updated>1684085826087</updated>
       <workItem from="1684085827180" duration="5474000" />
-      <workItem from="1684144640638" duration="3690000" />
+      <workItem from="1684144640638" duration="7271000" />
     </task>
     <servers />
   </component>

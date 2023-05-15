@@ -5,6 +5,7 @@ import ScreenHeaderButton from "../components/ScreenHeaderButton";
 import Welcome from "../components/Welcome";
 import {Bars4Icon, UserIcon} from "react-native-heroicons/solid";
 import colors from "../styles/colors";
+import PopularJobs from "../components/PopularJobs";
 
 const Index = () => {
     return (
@@ -30,6 +31,7 @@ const Index = () => {
                     padding: 10,
                 }}>
                     <Welcome/>
+                    <PopularJobs/>
                 </View>
             </ScrollView>
         </SafeAreaView>
