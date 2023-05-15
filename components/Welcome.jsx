@@ -64,20 +64,23 @@ const Welcome = () => {
                     contentContainerStyle={{
                         columnGap: 8,
                     }}
-                    renderItem={({item}) => {
+                    renderItem={({item: jobType}) => {
                         return (
                             <TouchableOpacity style={{
                                 borderRadius: "15%",
-                                borderColor: selectedJobType === item ? colors.indigo500 : colors.indigo300,
+                                borderColor: selectedJobType === jobType ? colors.indigo500 : colors.indigo300,
                                 borderWidth: 1,
                                 paddingVertical: 6,
                                 paddingHorizontal: 8,
                             }}
-                                              onPress={() => setSelectedJobType(item)}
+                                              onPress={() => {
+                                                  setSelectedJobType(jobType)
+                                                  router.push(`/search/${jobType}`)
+                                              }}
                             >
                                 <Text style={{
-                                    color: item === selectedJobType ? colors.gray800 : colors.gray500,
-                                }}>{item}</Text>
+                                    color: jobType === selectedJobType ? colors.gray800 : colors.gray500,
+                                }}>{jobType}</Text>
                             </TouchableOpacity>
                         )
                     }}
