@@ -6,6 +6,7 @@ import Welcome from "../components/Welcome";
 import {Bars4Icon, UserIcon} from "react-native-heroicons/solid";
 import colors from "../styles/colors";
 import PopularJobs from "../components/PopularJobs";
+import NearByJobs from "../components/NearByJobs";
 
 const Index = () => {
     return (
@@ -32,6 +33,7 @@ const Index = () => {
                 }}>
                     <Welcome/>
                     <PopularJobs/>
+                    <NearByJobs/>
                 </View>
             </ScrollView>
         </SafeAreaView>

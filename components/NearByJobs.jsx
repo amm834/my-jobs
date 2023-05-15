@@ -1,17 +1,17 @@
 import React from 'react';
-import {ActivityIndicator, FlatList, Text, TouchableOpacity, View} from "react-native";
+import {ActivityIndicator, FlatList, SafeAreaView, Text, TouchableOpacity, View} from "react-native";
 import colors from "../styles/colors";
 import fonts from "../styles/fonts";
 import PopularJobCard from "./cards/PopularJobCard";
 import {useQuery} from "@tanstack/react-query";
 import {searchJob} from "../services/job.service";
+import NearByJobCard from "./cards/NearByJobCard";
 
 const PopularJobs = () => {
     const {data, isError, isLoading, isSuccess} = useQuery({
         queryKey: ['search'],
         queryFn: searchJob,
     })
-
 
 
     return (
@@ -25,7 +25,7 @@ const PopularJobs = () => {
                     flex: 1,
                     color: colors.gray800,
                     fontSize: fonts.xl,
-                }}>Popular Jobs</Text>
+                }}>Nearby Jobs</Text>
                 <TouchableOpacity>
                     <Text style={{
                         color: colors.gray500,
@@ -38,21 +38,14 @@ const PopularJobs = () => {
                 marginTop: 14,
             }}>
                 {isLoading && <ActivityIndicator color={colors.gray500}/>}
-                {isSuccess &&
-                    <FlatList
-                        data={data.data}
-                        renderItem={({item}) => {
-                            return <PopularJobCard
-                                item={item}
-                                onCardPress={() =>{}}
-                            />
+                {isSuccess && data?.data.map(job =>
+                    <NearByJobCard
+                        key={`nearby_jobs_${job?.job_id}`}
+                        item={job}
+                        onPress={() => {
                         }}
-                        keyExtractor={item => item.job_posted_at_timestamp}
-                        horizontal={true}
-                        contentContainerStyle={{
-                            columnGap: 16,
-                        }}
-                    />}
+                    />
+                )}
             </View>
         </View>
     );

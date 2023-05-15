@@ -4,11 +4,11 @@ import colors from "../../styles/colors";
 import fonts from "../../styles/fonts";
 import {checkImageURL} from "../../utils/checkImage";
 
-const PopularCard = ({
-                         item,
-                         selectedJobType,
-                         onCardPress,
-                     }) => {
+const PopularJobCard = ({
+                            item,
+                            selectedJobType,
+                            onCardPress,
+                        }) => {
     return (
         <TouchableOpacity
             style={{
@@ -16,7 +16,8 @@ const PopularCard = ({
                 borderRadius: 10,
                 marginVertical: 5,
                 height: 'auto',
-                width: 200,
+                width: '100%',
+                backgroundColor: colors.gray100,
             }}
         >
             <TouchableOpacity
@@ -25,7 +26,7 @@ const PopularCard = ({
                     height: 40,
                     backgroundColor: colors.gray100,
                     borderRadius: 10,
-                    shadowColor: colors.gray100,
+                    shadowColor: colors.white,
                     shadowOffset: {
                         width: 0,
                         height: 2,
@@ -33,6 +34,8 @@ const PopularCard = ({
                     shadowOpacity: 0.25,
                     shadowRadius: 3.84,
                     elevation: 5,
+                    paddingHorizontal: 5,
+                    paddingVertical: 5,
                 }}
                 onPress={() => onCardPress(selectedJobType, item)}
             >
@@ -54,7 +57,9 @@ const PopularCard = ({
                 fontSize: fonts.md,
                 marginTop: 15,
                 fontWeight: 'bold',
-            }}>{item.employer_name}</Text>
+            }}
+                  numberOfLines={1}
+            >{item.employer_name}</Text>
 
             <View>
                 <Text
@@ -72,7 +77,8 @@ const PopularCard = ({
                     marginTop: 5,
                     marginBottom: 5,
                     width: '100%',
-                }}>
+                }}
+                >
                     {item.job_country}
                 </Text>
             </View>
@@ -80,4 +86,4 @@ const PopularCard = ({
     );
 };
 
-export default PopularCard;
+export default PopularJobCard;
