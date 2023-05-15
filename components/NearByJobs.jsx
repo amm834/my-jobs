@@ -1,16 +1,17 @@
 import React from 'react';
-import {ActivityIndicator, FlatList, SafeAreaView, Text, TouchableOpacity, View} from "react-native";
+import {ActivityIndicator, Text, TouchableOpacity, View} from "react-native";
 import colors from "../styles/colors";
 import fonts from "../styles/fonts";
-import PopularJobCard from "./cards/PopularJobCard";
 import {useQuery} from "@tanstack/react-query";
-import {searchJob} from "../services/job.service";
 import NearByJobCard from "./cards/NearByJobCard";
+import {searchJob, useSearchJobQuery} from "../features/search/queries";
+import {useRouter} from "expo-router";
+import log from "../utils/logger";
 
 const PopularJobs = () => {
-    const {data, isError, isLoading, isSuccess} = useQuery({
-        queryKey: ['search'],
-        queryFn: searchJob,
+    const router = useRouter()
+    const {data, isSuccess, isLoading} = useSearchJobQuery({
+        PositionTitle: 'Software Engineer'
     })
 
 
@@ -38,11 +39,13 @@ const PopularJobs = () => {
                 marginTop: 14,
             }}>
                 {isLoading && <ActivityIndicator color={colors.gray500}/>}
-                {isSuccess && data?.data.map(job =>
+                {isSuccess && data?.SearchResult?.SearchResultItems?.map(job =>
                     <NearByJobCard
-                        key={`nearby_jobs_${job?.job_id}`}
+                        key={`nearby_jobs_${job?.MatchedObjectId}`}
                         item={job}
                         onPress={() => {
+                            log.debug(job)
+                            router.push(`/jobs/${job.MatchedObjectId}`)
                         }}
                     />
                 )}

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Image, Text, TouchableOpacity, View} from "react-native";
+import {Text, TouchableOpacity, View, Image} from "react-native";
 import colors from "../../styles/colors";
 import fonts from "../../styles/fonts";
 import {checkImageURL} from "../../utils/checkImage";
@@ -7,7 +7,7 @@ import {checkImageURL} from "../../utils/checkImage";
 const PopularJobCard = ({
                             item,
                             selectedJobType,
-                            onCardPress,
+                            onPress,
                         }) => {
     return (
         <TouchableOpacity
@@ -19,6 +19,7 @@ const PopularJobCard = ({
                 width: '100%',
                 backgroundColor: colors.gray100,
             }}
+            onPress={onPress}
         >
             <TouchableOpacity
                 style={{
@@ -51,6 +52,7 @@ const PopularJobCard = ({
                         height: '100%',
                     }}
                 />
+
             </TouchableOpacity>
             <Text style={{
                 color: colors.gray500,
@@ -59,7 +61,7 @@ const PopularJobCard = ({
                 fontWeight: 'bold',
             }}
                   numberOfLines={1}
-            >{item.employer_name}</Text>
+            >{item.MatchedObjectDescriptor.OrganizationName}</Text>
 
             <View>
                 <Text
@@ -69,7 +71,7 @@ const PopularJobCard = ({
                     numberOfLines={1}
                     ellipsizeMode={"tail"}
                 >
-                    {item.job_title}
+                    {item.MatchedObjectDescriptor.PositionTitle}
                 </Text>
                 <Text style={{
                     color: colors.gray500,
@@ -79,7 +81,7 @@ const PopularJobCard = ({
                     width: '100%',
                 }}
                 >
-                    {item.job_country}
+                    {item.MatchedObjectDescriptor.PositionLocationDisplay}
                 </Text>
             </View>
         </TouchableOpacity>

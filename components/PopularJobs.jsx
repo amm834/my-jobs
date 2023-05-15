@@ -3,16 +3,15 @@ import {ActivityIndicator, FlatList, Text, TouchableOpacity, View} from "react-n
 import colors from "../styles/colors";
 import fonts from "../styles/fonts";
 import PopularJobCard from "./cards/PopularJobCard";
-import {useQuery} from "@tanstack/react-query";
-import {searchJob} from "../services/job.service";
+import {useSearchJobQuery} from "../features/search/queries";
+import log from "../utils/logger";
+import {useRouter} from "expo-router";
 
 const PopularJobs = () => {
-    const {data, isError, isLoading, isSuccess} = useQuery({
-        queryKey: ['search'],
-        queryFn: searchJob,
+    const router = useRouter()
+    const {data, isSuccess, isLoading} = useSearchJobQuery({
+        PositionTitle: 'Software Engineer'
     })
-
-
 
     return (
         <View style={{
@@ -40,14 +39,17 @@ const PopularJobs = () => {
                 {isLoading && <ActivityIndicator color={colors.gray500}/>}
                 {isSuccess &&
                     <FlatList
-                        data={data.data}
+                        data={data?.SearchResult?.SearchResultItems}
                         renderItem={({item}) => {
                             return <PopularJobCard
                                 item={item}
-                                onCardPress={() =>{}}
+                                onCardPress={(item) => {
+                                    log.debug(item)
+                                    router.push(`/jobs/${item.MatchedObjectId}`)
+                                }}
                             />
                         }}
-                        keyExtractor={item => item.job_posted_at_timestamp}
+                        keyExtractor={item => item.MatchedObjectId}
                         horizontal={true}
                         contentContainerStyle={{
                             columnGap: 16,

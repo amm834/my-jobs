@@ -5,10 +5,10 @@ import fonts from "../../styles/fonts";
 import {checkImageURL} from "../../utils/checkImage";
 
 const PopularJobCard = ({
-                         item,
-                         selectedJobType,
-                         onCardPress,
-                     }) => {
+                            item,
+                            selectedJobType,
+                            onCardPress,
+                        }) => {
     return (
         <TouchableOpacity
             style={{
@@ -18,6 +18,7 @@ const PopularJobCard = ({
                 height: 'auto',
                 width: 200,
             }}
+            onPress={() => onCardPress(item)}
         >
             <TouchableOpacity
                 style={{
@@ -56,7 +57,7 @@ const PopularJobCard = ({
                 fontWeight: 'bold',
             }}
                   numberOfLines={1}
-            >{item.employer_name}</Text>
+            >{item.MatchedObjectDescriptor.OrganizationName}</Text>
 
             <View>
                 <Text
@@ -66,7 +67,7 @@ const PopularJobCard = ({
                     numberOfLines={1}
                     ellipsizeMode={"tail"}
                 >
-                    {item.job_title}
+                    {item.MatchedObjectDescriptor.PositionTitle}
                 </Text>
                 <Text style={{
                     color: colors.gray500,
@@ -76,7 +77,7 @@ const PopularJobCard = ({
                     width: '100%',
                 }}
                 >
-                    {item.job_country}
+                    {item.MatchedObjectDescriptor.PositionLocationDisplay}
                 </Text>
             </View>
         </TouchableOpacity>
