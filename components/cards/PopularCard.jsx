@@ -10,6 +10,13 @@ const PopularCard = ({
                      }) => {
     return (
         <TouchableOpacity
+            style={{
+                padding: 15,
+                borderRadius: 10,
+                marginVertical: 5,
+                height: 'auto',
+                width:200,
+            }}
         >
             <TouchableOpacity
                 style={{
@@ -29,8 +36,30 @@ const PopularCard = ({
             <Text style={{
                 color: colors.gray500,
                 fontSize: fonts.md,
-                marginTop: 5
+                marginTop: 5,
+                fontWeight: 'bold',
             }}>{item.employer_name}</Text>
+
+            <View>
+                <Text
+                    style={{
+                        fontSize: fonts.xl,
+                    }}
+                    numberOfLines={1}
+                    ellipsizeMode={"tail"}
+                >
+                    {item.job_title}
+                </Text>
+                <Text style={{
+                    color: colors.gray500,
+                    fontSize: fonts.md,
+                    marginTop: 5,
+                    marginBottom: 5,
+                    width: '100%',
+                }}>
+                    {item.job_country}
+                </Text>
+            </View>
         </TouchableOpacity>
     );
 };
