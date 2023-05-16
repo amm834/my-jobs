@@ -5,7 +5,6 @@ const searchJob = async (params) => {
     try {
         const res = await http.get('/Search', {
             params: {
-                Page: 3,
                 ResultsPerPage: 10,
                 ...params,
             }

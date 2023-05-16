@@ -7,7 +7,11 @@ import colors from "../styles/colors";
 
 const jobTypes = ['Full Time', 'Part Time', 'Contractor']
 
-const Welcome = () => {
+const Welcome = ({
+                     searchTerm,
+                     setSearchTerm,
+                     onSearchClick,
+                 }) => {
     const router = useRouter()
     const [selectedJobType, setSelectedJobType] = useState("Full Time")
 
@@ -42,16 +46,21 @@ const Welcome = () => {
                         backgroundColor: colors.indigo50,
                         flex: 6,
                     }}
-                    placeholder="What are  you looking for"
+                    placeholder="What are  you looking for?"
+                    value={searchTerm}
+                    onChangeText={text => setSearchTerm(text)}
                 />
-                <TouchableOpacity style={{
-                    backgroundColor: colors.indigo,
-                    borderRadius: 10,
-                    alignItems: "center",
-                    justifyContent: "center",
-                    marginLeft: 4,
-                    flex: 1,
-                }}>
+                <TouchableOpacity
+                    style={{
+                        backgroundColor: colors.indigo,
+                        borderRadius: 10,
+                        alignItems: "center",
+                        justifyContent: "center",
+                        marginLeft: 4,
+                        flex: 1,
+                    }}
+                    onPress={onSearchClick}
+                >
                     <MagnifyingGlassIcon color="white"/>
                 </TouchableOpacity>
             </View>
@@ -67,17 +76,18 @@ const Welcome = () => {
                     }}
                     renderItem={({item: jobType}) => {
                         return (
-                            <TouchableOpacity style={{
-                                borderRadius: 50,
-                                borderColor: selectedJobType === jobType ? colors.indigo500 : colors.indigo300,
-                                borderWidth: 1,
-                                paddingVertical: 6,
-                                paddingHorizontal: 8,
-                            }}
-                                              onPress={() => {
-                                                  setSelectedJobType(jobType)
-                                                  router.push(`/search/${jobType}`)
-                                              }}
+                            <TouchableOpacity
+                                style={{
+                                    borderRadius: 50,
+                                    borderColor: selectedJobType === jobType ? colors.indigo500 : colors.indigo300,
+                                    borderWidth: 1,
+                                    paddingVertical: 6,
+                                    paddingHorizontal: 8,
+                                }}
+                                onPress={() => {
+                                    setSelectedJobType(jobType)
+                                    router.push(`/search/${jobType}`)
+                                }}
                             >
                                 <Text style={{
                                     color: jobType === selectedJobType ? colors.gray800 : colors.gray500,
