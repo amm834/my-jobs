@@ -10,7 +10,7 @@ import NearByJobs from "../components/NearByJobs";
 
 const Index = () => {
     return (
-        <SafeAreaView style={{flex: 1, backgroundColor: colors.primary}}>
+        <SafeAreaView style={{flex: 1, backgroundColor: colors.white}}>
             <Stack.Screen
                 options={{
                     headerStyle: {

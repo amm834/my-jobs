@@ -2,7 +2,6 @@ import React from 'react';
 import {ActivityIndicator, Text, TouchableOpacity, View} from "react-native";
 import colors from "../styles/colors";
 import fonts from "../styles/fonts";
-import {useQuery} from "@tanstack/react-query";
 import NearByJobCard from "./cards/NearByJobCard";
 import {searchJob, useSearchJobQuery} from "../features/search/queries";
 import {useRouter} from "expo-router";
@@ -44,7 +43,6 @@ const PopularJobs = () => {
                         key={`nearby_jobs_${job?.MatchedObjectId}`}
                         item={job}
                         onPress={() => {
-                            log.debug(job)
                             router.push(`/jobs/${job.MatchedObjectId}`)
                         }}
                     />

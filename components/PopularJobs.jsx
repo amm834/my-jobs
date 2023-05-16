@@ -44,8 +44,7 @@ const PopularJobs = () => {
                             return <PopularJobCard
                                 item={item}
                                 onCardPress={(item) => {
-                                    log.debug(item)
-                                    router.push(`/jobs/${item.MatchedObjectId}`)
+                                    router.push(`/jobs/${item?.MatchedObjectId}`)
                                 }}
                             />
                         }}

@@ -3,11 +3,10 @@ import {View, Text, TouchableOpacity} from "react-native";
 
 const ScreenHeaderButton = ({
                                 icon,
+    onPress,
                             }) => {
     return (
-        <TouchableOpacity onPress={() => {
-            console.log('hello world')
-        }}>
+        <TouchableOpacity onPress={onPress}>
             {icon}
         </TouchableOpacity>
     );

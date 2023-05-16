@@ -17,7 +17,7 @@ const PopularJobCard = ({
                 marginVertical: 5,
                 height: 'auto',
                 width: '100%',
-                backgroundColor: colors.gray100,
+                // backgroundColor: colors.gray100,
             }}
             onPress={onPress}
         >

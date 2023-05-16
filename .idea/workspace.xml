@@ -5,20 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e8496c9e-21c9-4df8-8254-64838afc5d50" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/features/search/queries.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/logger.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/post/[id].jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/jobs/[id].jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/_layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/_layout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/jobs/[id].jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/jobs/[id].jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/NearByJobs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/NearByJobs.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/PopularJobs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/PopularJobs.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ScreenHeaderButton.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ScreenHeaderButton.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/cards/NearByJobCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/cards/NearByJobCard.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/cards/PopularJobCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/cards/PopularJobCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/http.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/http.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/job.service.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/colors.js" beforeDir="false" afterPath="$PROJECT_DIR$/styles/colors.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,23 +43,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/macbook/workspace/my-jobs/components/cards",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/macbook/workspace/my-jobs/components/cards&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/macbook/Library/Application Support/JetBrains/Toolbox/apps/WebStorm/ch-0/231.8770.64/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/components/cards" />
@@ -79,7 +77,10 @@
       <updated>1684085826087</updated>
       <workItem from="1684085827180" duration="5474000" />
       <workItem from="1684144640638" duration="8286000" />
-      <workItem from="1684160184660" duration="11950000" />
+      <workItem from="1684160184660" duration="18280000" />
+      <workItem from="1684228102434" duration="2000" />
+      <workItem from="1684244721063" duration="615000" />
+      <workItem from="1684245469079" duration="3860000" />
     </task>
     <servers />
   </component>
