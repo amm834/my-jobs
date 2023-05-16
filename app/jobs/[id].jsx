@@ -268,6 +268,7 @@ const BlogPostById = () => {
                     flexDirection: 'row',
                     alignItems: 'center',
                     paddingHorizontal: 16,
+                    paddingVertical:14,
                     columnGap:10,
                 }}
             >
